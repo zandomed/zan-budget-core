@@ -44,13 +44,13 @@ devDependencies:
     specifier: ^6.0.0
     version: 6.0.2
   '@typescript-eslint/eslint-plugin':
-    specifier: ^6.0.0
+    specifier: ^6.18.1
     version: 6.18.1(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(typescript@5.3.3)
   '@typescript-eslint/parser':
-    specifier: ^6.0.0
+    specifier: ^6.18.1
     version: 6.18.1(eslint@8.56.0)(typescript@5.3.3)
   eslint:
-    specifier: ^8.42.0
+    specifier: ^8.56.0
     version: 8.56.0
   eslint-config-prettier:
     specifier: ^9.0.0
@@ -58,11 +58,17 @@ devDependencies:
   eslint-plugin-prettier:
     specifier: ^5.0.0
     version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.1)
+  eslint-plugin-simple-import-sort:
+    specifier: ^10.0.0
+    version: 10.0.0(eslint@8.56.0)
+  husky:
+    specifier: ^8.0.3
+    version: 8.0.3
   jest:
     specifier: ^29.5.0
     version: 29.7.0(@types/node@20.11.0)(ts-node@10.9.2)
   prettier:
-    specifier: ^3.0.0
+    specifier: ^3.2.1
     version: 3.2.1
   source-map-support:
     specifier: ^0.5.21
@@ -2355,6 +2361,14 @@ packages:
       synckit: 0.8.8
     dev: true
 
+  /eslint-plugin-simple-import-sort@10.0.0(eslint@8.56.0):
+    resolution: {integrity: sha512-AeTvO9UCMSNzIHRkg8S6c3RPy5YEwKWSQPx3DYghLedo2ZQxowPFLGDN1AZ2evfg6r6mjBSZSLxLFsWSu3acsw==}
+    peerDependencies:
+      eslint: '>=5.0.0'
+    dependencies:
+      eslint: 8.56.0
+    dev: true
+
   /eslint-scope@5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -2924,6 +2938,12 @@ packages:
   /human-signals@2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
+    dev: true
+
+  /husky@8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /iconv-lite@0.4.24:
