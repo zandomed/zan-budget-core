@@ -4,9 +4,7 @@ import { Environment } from '../domain/models/environment';
 import { LogLevel } from '../domain/models/log-level';
 
 export default Joi.object({
-  NODE_ENV: Joi.string()
-    .valid(...Object.values(Environment))
-    .required(),
+  NODE_ENV: Joi.string().valid(...Object.values(Environment)),
   PORT: Joi.number().required(),
   LOGGER: Joi.string()
     .valid(...Object.values(LogLevel))

@@ -20,6 +20,17 @@ export class PrismaService
   }
   async onModuleInit() {
     await this.$connect();
+
+    // Object.assign(
+    //   this,
+    //   this.$extends({
+    //     query: {
+    //       user: {
+    //         async register(data) {}
+    //       }
+    //     }
+    //   })
+    // );
   }
 
   async onModuleDestroy() {
