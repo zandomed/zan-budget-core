@@ -1,20 +1,16 @@
 import * as Joi from 'joi';
 
-import { Environment } from '../domain/Environment';
+import { Environment } from '../domain/models/environment';
+import { LogLevel } from '../domain/models/log-level';
 
 export default Joi.object({
   NODE_ENV: Joi.string()
     .valid(...Object.values(Environment))
-    .default('development'),
-  PORT: Joi.number().default(3000),
-  LOGGER: Joi.string().valid(
-    'debug',
-    'error',
-    'log',
-    'verbose',
-    'warn',
-    'fatal'
-  ),
+    .required(),
+  PORT: Joi.number().required(),
+  LOGGER: Joi.string()
+    .valid(...Object.values(LogLevel))
+    .required(),
   DATABASE_HOST: Joi.string().required(),
   DATABASE_PORT: Joi.number().required(),
   DATABASE_USER: Joi.string().required(),

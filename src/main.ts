@@ -5,7 +5,7 @@ import {
   NestFastifyApplication
 } from '@nestjs/platform-fastify';
 
-import { EnvironmentVariables } from '@/config';
+import { EnvironmentVariables } from '@/common/config';
 
 import { AppModule } from './app.module';
 

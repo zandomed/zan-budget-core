@@ -1,4 +1,4 @@
-import { DatabaseModule } from './infrastructure/database.module';
+import { DatabaseModule } from './database.module';
 
 export { PrismaService } from './infrastructure/prisma/prisma.service';
 export default DatabaseModule;

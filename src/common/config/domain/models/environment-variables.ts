@@ -1,6 +1,6 @@
 import { LogLevel } from '@nestjs/common';
 
-import { Environment } from './Environment';
+import { Environment } from './environment';
 
 export interface EnvironmentVariables {
   port: number;
